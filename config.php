@@ -3,28 +3,31 @@
 	session_start();
 	include('Login.php');
 
-	if (!defined('INCLUDE_PATH')) define('INCLUDE_PATH', 'http://localhost/exampleOauthDiscord/');
-	if (!defined('INCLUDE_PATH_PAINEL')) define('INCLUDE_PATH_PAINEL', INCLUDE_PATH . 'painel/');
-	if (!defined('CAMINHO_PAGINA_PAINEL')) define('CAMINHO_PAGINA_PAINEL', '/exampleOauthDiscord/');
-
-	// Base dos documentos
-	if (!defined('BASE_DIR')) define('BASE_DIR', __DIR__ . '/');
-
-	// Dados para oauth2 do discord
+	$linkYourWebsite = "http://localhost/exampleOauthDiscord/";
 	// Definindo o ID da aplicacao (pega no site do discord na aba de Oauth2)
 	define('OAUTH2_CLIENT_ID', 'Coloque_aqui_seu_ID');
 	// Definindo a TOKEN da aplicacao (pega no site do discord na aba de Oauth2)
 	define('OAUTH2_CLIENT_SECRET', 'Coloque_aqui_sua_token');
+
+
+	
+	if (!defined('INCLUDE_PATH')) define('INCLUDE_PATH', $nameWebsite);
+	if (!defined('BASE_DIR')) define('BASE_DIR', __DIR__ . '/');
+
+	// Dados para oauth2 do discord
 	$authorizeURL = 'https://discord.com/api/oauth2/authorize';
 	$tokenURL = 'https://discord.com/api/oauth2/token';
 	$revokeURL = 'https://discord.com/api/oauth2/token/revoke';
+
 	// Esse redirect tem q ser o mesmo que colocou no site do discord
-	$redirect = "http://localhost/brasilRolePlayXbox/";
+	$redirect = $linkYourWebsite;
+
 	// Esse link é utilizado para pegar as informacoes do usuario 
 	$apiURLBase = 'https://discord.com/api/users/@me';
+
 	// Esse link é utilizado para pegar as informacoes de um usuario relacionados a um servidor especifico no caso meu
 	// o servidor é esse id: 579126159070068746 ... ele pega os cargos do user nesse servidor
-	$apiURLGuild = 'https://discord.com/api/users/@me/guilds/579126159070068746/member';
+	$apiURLGuild = 'https://discord.com/api/users/@me/guilds/ID_SERVER/member';
 
 	// Funções utilizadas para o fazer request
 	function apiRequest($url, $post = FALSE, $headers = array())
