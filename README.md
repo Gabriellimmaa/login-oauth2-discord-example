@@ -13,7 +13,7 @@ Para essa aplicação funcionar você deve:<br />
 
 ![](https://cdn.discordapp.com/attachments/771470980324524043/847594651405385778/linha.png)<br /> 
 
-En-Us
+EN-Us
 # Login OAuth2 Discord in php
 I recently developed a freelancer and used discord authentication<br />
 I think it will help a lot of people :)<br /><br />
