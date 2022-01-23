@@ -2,8 +2,9 @@ PT-br
 # Login OAuth2 Discord em php
 Recentemente desenvolvi um freelancer e utilizei da autenticação do discord<br />
 Acredito que vá ajudar bastante algumas pessoas :)<br /><br />
-
-
+Para essa aplicação funcionar você deve:<br />
+- editar em config.php as seguintes linhas: 6, 8, 9
+<br /><br />
 Documentação OAuth2 Discord:
 https://discord.com/developers/docs/topics/oauth2<br /><br />
 Caso seja seu primeiro contato com oauth leia isso:
