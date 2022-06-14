@@ -1,4 +1,4 @@
-# <span>&#x1f1e7;&#x1f1f7;</span> Login OAuth2 Discord em php
+# :brazil: Login OAuth2 Discord em php
 Recentemente desenvolvi um freelancer e utilizei da autenticação do discord<br />
 Acredito que vá ajudar bastante algumas pessoas :)<br /><br />
 Documentação OAuth2 Discord:
@@ -11,8 +11,7 @@ Para essa aplicação funcionar você deve:<br />
 
 ---
 
-🇺🇸 EN-Us
-# 💻 Login OAuth2 Discord in php
+# :us: Login OAuth2 Discord in php
 I recently developed a freelancer and used discord authentication<br />
 I think it will help a lot of people :)<br /><br />
 
