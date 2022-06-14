@@ -1,5 +1,4 @@
-🇧🇷 PT-br
-# 💻 Login OAuth2 Discord em php
+# :brazil: Login OAuth2 Discord em php
 Recentemente desenvolvi um freelancer e utilizei da autenticação do discord<br />
 Acredito que vá ajudar bastante algumas pessoas :)<br /><br />
 Documentação OAuth2 Discord:
